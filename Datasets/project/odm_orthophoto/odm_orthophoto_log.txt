@@ -1,0 +1,138 @@
+/code/SuperBuild/install/bin/odm_orthophoto_log.txt
+
+Arguments given
+-inputFiles
+/datasets/project/odm_texturing_25d/odm_textured_model_geo.obj
+-logFile
+/datasets/project/odm_orthophoto/odm_orthophoto_log.txt
+-outputFile
+/datasets/project/odm_orthophoto/odm_orthophoto.tif
+-resolution
+20.0
+-verbose
+-outputCornerFile
+/datasets/project/odm_orthophoto/odm_orthophoto_corners.txt
+-inpaintThreshold
+1.0
+-utm_north_offset
+9802136.0
+-utm_east_offset
+167653.0
+-a_srs
++proj=utm +zone=18 +south +datum=WGS84 +units=m +no_defs +type=crs
+-co
+TILED=YES
+-co
+COMPRESS=DEFLATE
+-co
+PREDICTOR=2
+-co
+BIGTIFF=IF_SAFER
+-co
+BLOCKXSIZE=512
+-co
+BLOCKYSIZE=512
+-co
+NUM_THREADS=8
+--config
+GDAL_CACHEMAX
+6506528768.0
+
+Log file path was set to: /datasets/project/odm_orthophoto/odm_orthophoto_log.txt
+Writing output to: /datasets/project/odm_orthophoto/odm_orthophoto.tif
+Resolution count was set to: 20pixels/meter
+Inpaint threshold was set to: 1
+
+Reading mesh file... /datasets/project/odm_texturing_25d/odm_textured_model_geo.obj
+Found material0000
+Loading odm_textured_model_geo_material0000_map_Kd.png
+Found material0001
+Loading odm_textured_model_geo_material0001_map_Kd.png
+Found material0002
+Loading odm_textured_model_geo_material0002_map_Kd.png
+Found material0003
+Loading odm_textured_model_geo_material0003_map_Kd.png
+Found material0004
+Loading odm_textured_model_geo_material0004_map_Kd.png
+Found material0005
+Loading odm_textured_model_geo_material0005_map_Kd.png
+Found material0006
+Loading odm_textured_model_geo_material0006_map_Kd.png
+Found material0007
+Loading odm_textured_model_geo_material0007_map_Kd.png
+Found material0008
+Loading odm_textured_model_geo_material0008_map_Kd.png
+Found material0009
+Loading odm_textured_model_geo_material0009_map_Kd.png
+Found material0010
+Loading odm_textured_model_geo_material0010_map_Kd.png
+Found material0011
+Loading odm_textured_model_geo_material0011_map_Kd.png
+Found material0012
+Loading odm_textured_model_geo_material0012_map_Kd.png
+Found material0013
+Loading odm_textured_model_geo_material0013_map_Kd.png
+Found material0014
+Loading odm_textured_model_geo_material0014_map_Kd.png
+Mesh file read.
+
+Boundary points:
+Point 1: -152.014 -119.072
+Point 2: -152.014 90.4785
+Point 3: 84.136 90.4785
+Point 4: 84.136 -119.072
+
+Model bounds x : -152.014 -> 84.136
+Model bounds y : -119.072 -> 90.4785
+Model area : 49485.2m2
+Model resolution, width x height : 4724x4192
+Translating and scaling mesh...
+Rendering the ortho photo...
+Texture channels: 3
+Texture depth: 8bit
+Rendering material0000 ... done
+Rendering material0001 ... done
+Rendering material0002 ... done
+Rendering material0003 ... done
+Rendering material0004 ... done
+Rendering material0005 ... done
+Rendering material0006 ... done
+Rendering material0007 ... done
+Rendering material0008 ... done
+Rendering material0009 ... done
+Rendering material0010 ... done
+Rendering material0011 ... done
+Rendering material0012 ... done
+Rendering material0013 ... done
+Rendering material0014 ... done
+... model rendered
+
+Edge inpainting
+Block [(2048, 3072), (0, 1024)]
+Block [(2048, 3072), (3072, 4192)]
+Block [(0, 1024), (1024, 2048)]
+Block [(0, 1024), (3072, 4192)]
+Block [(2048, 3072), (1024, 2048)]
+Block [(0, 1024), (2048, 3072)]
+Block [(0, 1024), (0, 1024)]
+Block [(2048, 3072), (2048, 3072)]
+Block [(3072, 4724), (2048, 3072)]
+Block [(3072, 4724), (1024, 2048)]
+Block [(1024, 2048), (1024, 2048)]
+Block [(1024, 2048), (3072, 4192)]
+Block [(1024, 2048), (0, 1024)]
+Block [(3072, 4724), (3072, 4192)]
+Block [(1024, 2048), (2048, 3072)]
+Block [(3072, 4724), (0, 1024)]
+
+Writing ortho photo to /datasets/project/odm_orthophoto/odm_orthophoto.tif
+Set GDAL_CACHEMAX to 6506528768
+Set TILED=YES
+Set COMPRESS=DEFLATE
+Set PREDICTOR=2
+Set BIGTIFF=IF_SAFER
+Set BLOCKXSIZE=512
+Set BLOCKYSIZE=512
+Set NUM_THREADS=8
+Writing corner coordinates to /datasets/project/odm_orthophoto/odm_orthophoto_corners.txt
+Orthophoto generation done.
